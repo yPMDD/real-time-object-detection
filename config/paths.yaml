@@ -1,0 +1,13 @@
+# Project Paths Configuration
+data:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+models:
+  pretrained: models/pretrained
+  trained: models/trained
+  exported: models/exported
+reports:
+  figures: reports/figures
+  metrics: reports/metrics
+  assets: reports/presentation_assets
