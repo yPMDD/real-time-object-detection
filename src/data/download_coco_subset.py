@@ -40,6 +40,9 @@ def download_coco_subset():
     # Filter the labels to only include our 4 classes
     view = dataset.filter_labels(label_field, fo.ViewField("label").is_in(classes))
 
+    # Apply the class map so "cell phone" becomes "phone"
+    view = view.map_labels(label_field, class_map)
+
     # 4. Export in YOLOv8 Format
     print(f"Exporting to {save_path}...")
     view.export(

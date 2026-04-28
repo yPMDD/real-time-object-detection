@@ -25,7 +25,7 @@ def train_model():
     # batch: Number of images per step (adjust if you get 'out of memory')
     results = model.train(
         data=dataset_config,
-        epochs=50,
+        epochs=150,
         imgsz=640,
         batch=16,
         device=0,
